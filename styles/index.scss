@@ -390,12 +390,22 @@ footer {
 
 .impressum, .datenschutz {
 
-
-  h1 {
-    font-size: 40pt;
+  h1, h2, h3, h4 {
     color: #33CCCC;
     font-weight: 500;
+  }
+
+  h1 {
+    font-size: 50pt;
     text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 30pt;
+  }
+
+  h3 {
+    font-size: 20pt;
   }
 
   #content {
@@ -404,6 +414,12 @@ footer {
 
     p, span, a, div {
       color: #666666;
+    }
+    a, a:visited {
+      color: #444444;
+    }
+    a:hover {
+      color: #1B6163;
     }
   }
 }

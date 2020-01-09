@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Mailto from 'react-protected-mailto';
 import Link from 'next/link';
+
+import * as Text from '../components/text';
+
  
 const App: React.FC = () => {
+
+  const [lang, setLang] = useState('de')
+
   return (
 
     <div className="App impressum">
@@ -29,10 +35,28 @@ const App: React.FC = () => {
       <section id="content">
 
         <div className="container">
-        
-          <h1>Impressum</h1>
 
-          <p>Hier kommt ganz viel Text</p>
+          <div className="language-switch">
+
+            <button
+              id="#en"
+              onClick={() => setLang('en')}
+              className={ lang==="en" ? 'active' : null}
+            >
+              English
+            </button>
+
+            <button
+              id="de"
+              onClick={() => setLang('de')}
+              className={ lang==="de" ? 'active' : null}
+            >
+              Deutsch
+            </button>
+
+          </div>
+      
+          { lang==="de" ?  <Text.ImpressumDe /> : <Text.ImpressumEn /> }
 
         </div>
 
@@ -49,7 +73,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="footer-legal">
-            <Link href="/datenschutzerklärung"><a>Datenschutzerklärung</a></Link>
+            <Link href="/datenschutz"><a>Datenschutzerklärung</a></Link>
             <Link href="/impressum"><a>Impressum</a></Link>
             <span className="legal-credits">Layout&Design: Lukas Großmann</span>
           </div>

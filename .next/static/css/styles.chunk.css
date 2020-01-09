@@ -262,16 +262,28 @@ footer {
     footer .footer-legal a:hover {
       color: #ffffff; }
 
-.impressum h1, .datenschutz h1 {
-  font-size: 40pt;
+.impressum h1, .impressum h2, .impressum h3, .impressum h4, .datenschutz h1, .datenschutz h2, .datenschutz h3, .datenschutz h4 {
   color: #33CCCC;
-  font-weight: 500;
+  font-weight: 500; }
+
+.impressum h1, .datenschutz h1 {
+  font-size: 50pt;
   text-transform: uppercase; }
+
+.impressum h2, .datenschutz h2 {
+  font-size: 30pt; }
+
+.impressum h3, .datenschutz h3 {
+  font-size: 20pt; }
 
 .impressum #content, .datenschutz #content {
   padding: 80pt 0; }
   .impressum #content p, .impressum #content span, .impressum #content a, .impressum #content div, .datenschutz #content p, .datenschutz #content span, .datenschutz #content a, .datenschutz #content div {
     color: #666666; }
+  .impressum #content a, .impressum #content a:visited, .datenschutz #content a, .datenschutz #content a:visited {
+    color: #444444; }
+  .impressum #content a:hover, .datenschutz #content a:hover {
+    color: #1B6163; }
 
 @keyframes spin {
   from {

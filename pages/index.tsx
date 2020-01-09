@@ -72,7 +72,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="footer-legal">
-            <Link href="/datenschutzerklärung"><a>Datenschutzerklärung</a></Link>
+            <Link href="/datenschutz"><a>Datenschutzerklärung</a></Link>
             <Link href="/impressum"><a>Impressum</a></Link>
             <span className="legal-credits">Layout&Design: Lukas Großmann</span>
           </div>
