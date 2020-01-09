@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+li, a, span, p, h1, h2, h3, input, label, textarea, button {
+  font-family: program, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20pt; }
+
+h1, h2, h3, a.button-cta {
+  font-weight: 500; }
+
+a.button-cta {
+  background-color: #FFEE00;
+  width: 0;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 25pt;
+  padding: 15pt 30pt;
+  margin: 0;
+  border-radius: 54pt;
+  text-align: center;
+  opacity: 0.7; }
+  a.button-cta:hover {
+    opacity: 1; }
+
+.container {
+  width: 90%;
+  margin: 0 5%; }
+
+#eyecatcher {
+  position: relative;
+  background-image: url(/images/eyecatcher.jpg);
+  background-size: cover;
+  background-position: 20% 30%;
+  height: 150pt; }
+  #eyecatcher header {
+    padding: 20pt 0;
+    display: flex; }
+    #eyecatcher header nav {
+      flex-grow: 1; }
+      #eyecatcher header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; }
+      #eyecatcher header nav li, #eyecatcher header nav a {
+        margin: 0;
+        padding: 0;
+        color: #FFF; }
+      #eyecatcher header nav li {
+        padding: 0 40px; }
+      #eyecatcher header nav a {
+        font-size: 20pt;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.3;
+        font-weight: 400; }
+      #eyecatcher header nav a:hover {
+        color: #FFEE00; }
+    #eyecatcher header .logo {
+      display: flex;
+      justify-content: right;
+      align-items: center; }
+      #eyecatcher header .logo span {
+        font-size: 30pt;
+        color: #fff;
+        text-transform: uppercase;
+        margin-right: 10pt;
+        text-shadow: #00000040 0.5pt 0.5pt 8pt; }
+      #eyecatcher header .logo img {
+        height: 50pt; }
+  #eyecatcher .eyecatcher-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50pt;
+    text-align: center; }
+    #eyecatcher .eyecatcher-content h1, #eyecatcher .eyecatcher-content h2 {
+      color: #FFF;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+    #eyecatcher .eyecatcher-content h1 {
+      font-size: 200pt; }
+    #eyecatcher .eyecatcher-content h2 {
+      font-size: 110pt; }
+  #eyecatcher .eyecatcher-scroll {
+    position: absolute;
+    bottom: -2.5vh;
+    transform: translateY(50%);
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    #eyecatcher .eyecatcher-scroll svg {
+      font-size: 30pt;
+      color: #00000029; }
+
+.home #eyecatcher {
+  height: 95vh; }
+
+#contact {
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #contact .contact-intro {
+    width: 100%;
+    text-align: center;
+    color: #666; }
+    #contact .contact-intro div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20pt 0pt; }
+      #contact .contact-intro div a, #contact .contact-intro div a:visited {
+        margin-left: 20pt;
+        transition: color 0.3s;
+        color: #444444; }
+      #contact .contact-intro div a:hover {
+        color: #1B6163; }
+      #contact .contact-intro div:first-of-type {
+        margin-top: 40pt; }
+    #contact .contact-intro svg {
+      background-color: #33CCCC;
+      color: #fff;
+      padding: 15pt;
+      border-radius: 50%;
+      height: 15pt;
+      width: 15pt;
+      display: inline-flex;
+      justify-content: center; }
+  #contact h2 {
+    color: #33CCCC;
+    font-size: 60pt;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0; }
+  #contact #ContactForm {
+    padding: 20pt;
+    width: 100%;
+    max-width: 600pt;
+    margin-top: 40pt;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30pt;
+    grid-row-gap: 30pt; }
+    #contact #ContactForm .big {
+      grid-column: span 2; }
+    #contact #ContactForm label {
+      display: none; }
+    #contact #ContactForm input, #contact #ContactForm textarea {
+      font-size: 20pt;
+      background-color: #fff;
+      color: #555555;
+      border-radius: 10pt;
+      box-shadow: 0.5pt 0.5pt 4pt #00000020; }
+    #contact #ContactForm input {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: #00000040 2pt solid;
+      outline: none; }
+      #contact #ContactForm input :focus {
+        border-bottom: #33CCCC 2px solid; }
+      #contact #ContactForm input :invalid {
+        border-bottom: #a00 2px solid; }
+      #contact #ContactForm input :valid {
+        border-bottom: #0a0 2px solid; }
+    #contact #ContactForm textarea {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      border: none;
+      border-bottom: #00000040 2pt solid;
+      outline: none; }
+      #contact #ContactForm textarea :focus {
+        border-bottom: #33CCCC 2px solid; }
+      #contact #ContactForm textarea :invalid {
+        border-bottom: #a00 2px solid; }
+      #contact #ContactForm textarea :valid {
+        border-bottom: #0a0 2px solid; }
+    #contact #ContactForm .dsgvo-confirm {
+      grid-column: span 2;
+      display: flex; }
+      #contact #ContactForm .dsgvo-confirm input {
+        margin-right: 1em;
+        width: 20pt; }
+      #contact #ContactForm .dsgvo-confirm label {
+        flex-grow: 1;
+        color: #666666;
+        display: block;
+        font-size: 12pt; }
+        #contact #ContactForm .dsgvo-confirm label a, #contact #ContactForm .dsgvo-confirm label a:visited {
+          transition: color 0.3s;
+          color: #444444;
+          font-size: 12pt; }
+        #contact #ContactForm .dsgvo-confirm label a:hover {
+          color: #1B6163; }
+    #contact #ContactForm .contact-buttons {
+      display: flex;
+      justify-content: center; }
+      #contact #ContactForm .contact-buttons .button {
+        display: inline;
+        background-color: #33CCCC;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20pt;
+        padding: 10pt 15pt;
+        border-radius: 54pt;
+        text-align: center;
+        opacity: 0.7; }
+        #contact #ContactForm .contact-buttons .button:hover {
+          opacity: 1; }
+    #contact #ContactForm .formstatus {
+      text-align: center; }
+      #contact #ContactForm .formstatus span {
+        font-size: 16pt;
+        color: #666666; }
+      #contact #ContactForm .formstatus span:before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900;
+        margin-right: 0.5em; }
+    #contact #ContactForm .form-success span:before {
+      content: "\F058";
+      color: #33CCCC; }
+    #contact #ContactForm .form-failed span:before {
+      content: "\F057";
+      color: #933; }
+    #contact #ContactForm .form-sending span:before {
+      content: "\F110";
+      animation: spin 2s infinite linear; }
+
+footer {
+  background-color: #333333;
+  padding: 80px 0px;
+  color: #999999; }
+  footer span, footer a {
+    font-size: 16pt; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+  footer .footer-company span, footer .footer-company a {
+    display: block; }
+  footer .footer-company .company-name {
+    font-weight: 500; }
+  footer .footer-legal {
+    text-align: right; }
+    footer .footer-legal span, footer .footer-legal a {
+      display: block; }
+    footer .footer-legal a, footer .footer-legal a:visited {
+      color: #bbbbbb; }
+    footer .footer-legal a:hover {
+      color: #ffffff; }
+
+.impressum h1, .datenschutz h1 {
+  font-size: 40pt;
+  color: #33CCCC;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.impressum #content, .datenschutz #content {
+  padding: 80pt 0; }
+  .impressum #content p, .impressum #content span, .impressum #content a, .impressum #content div, .datenschutz #content p, .datenschutz #content span, .datenschutz #content a, .datenschutz #content div {
+    color: #666666; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
