@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -9,10 +10,12 @@ const Header = () => {
               <li><a href="/#contact">contact</a></li>
             </ul>
           </nav>
-          <div className="logo">
-            <span>luckyg.design</span>
-            <img src="/images/logo.png" alt="Luckyg-Design Logo Icon" />
-          </div>
+          <Link href="/">
+            <a className="logo">
+              <span>luckyg.design</span>
+              <img src="/images/logo.png" alt="Luckyg-Design Logo Icon" />
+            </a>
+          </Link>
         </header>
     )
 }

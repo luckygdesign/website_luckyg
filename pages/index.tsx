@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Header />
 
         <div className="eyecatcher-content">
-          <h2>hey, i'm</h2>
+          <h2>hey, I'm</h2>
           <h1>LUKAS</h1>
           <a className="button-cta" href="#contact">get in touch</a>
         </div>
@@ -29,7 +29,7 @@ const App: React.FC = () => {
       </section>
 
       {/* contact section */}
-      <section id="contact">
+      <section id="contact" className="container">
 
         <div className="contact-intro">
           <h2>let's get in touch</h2>

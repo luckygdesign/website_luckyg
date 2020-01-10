@@ -7,6 +7,9 @@ li, a, span, p, h1, h2, h3, input, label, textarea, button {
   font-weight: 400;
   text-decoration: none;
   font-size: 20pt; }
+  @media (max-width: 768px) {
+    li, a, span, p, h1, h2, h3, input, label, textarea, button {
+      font-size: 12pt; } }
 
 h1, h2, h3, a.button-cta {
   font-weight: 500; }
@@ -24,6 +27,10 @@ a.button-cta {
   opacity: 0.7; }
   a.button-cta:hover {
     opacity: 1; }
+  @media (max-width: 768px) {
+    a.button-cta {
+      font-size: 12pt;
+      padding: 10pt 20pt; } }
 
 .container {
   width: 90%;
@@ -38,8 +45,14 @@ a.button-cta {
   #eyecatcher header {
     padding: 20pt 0;
     display: flex; }
+    @media (max-width: 768px) {
+      #eyecatcher header {
+        justify-content: center; } }
     #eyecatcher header nav {
       flex-grow: 1; }
+      @media (max-width: 768px) {
+        #eyecatcher header nav {
+          display: none; } }
       #eyecatcher header nav ul {
         list-style-type: none;
         margin: 0;
@@ -68,9 +81,16 @@ a.button-cta {
         color: #fff;
         text-transform: uppercase;
         margin-right: 10pt;
-        text-shadow: #00000040 0.5pt 0.5pt 8pt; }
+        text-shadow: #00000040 0.5pt 0.5pt 8pt;
+        display: none; }
+        @media (max-width: 424px) {
+          #eyecatcher header .logo span {
+            display: none; } }
       #eyecatcher header .logo img {
-        height: 50pt; }
+        height: 80pt; }
+        @media (max-width: 424px) {
+          #eyecatcher header .logo img {
+            height: 70pt; } }
   #eyecatcher .eyecatcher-content {
     position: absolute;
     left: 50%;
@@ -84,6 +104,9 @@ a.button-cta {
       padding: 0; }
     #eyecatcher .eyecatcher-content h1 {
       font-size: 18vw; }
+      @media (max-width: 768px) {
+        #eyecatcher .eyecatcher-content h1 {
+          margin-bottom: 20pt; } }
     #eyecatcher .eyecatcher-content h2 {
       font-size: 12vw; }
   #eyecatcher .eyecatcher-scroll {
@@ -101,7 +124,7 @@ a.button-cta {
   height: 95vh; }
 
 #contact {
-  padding: 120px;
+  padding: 120px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
@@ -120,8 +143,9 @@ a.button-cta {
         color: #444444; }
       #contact .contact-intro div a:hover {
         color: #1B6163; }
-      #contact .contact-intro div:first-of-type {
-        margin-top: 40pt; }
+      @media (min-width: 768px) {
+        #contact .contact-intro div:first-of-type {
+          margin-top: 40pt; } }
     #contact .contact-intro svg {
       background-color: #33CCCC;
       color: #fff;
@@ -137,6 +161,12 @@ a.button-cta {
     text-transform: uppercase;
     padding: 0;
     margin: 0; }
+    @media (max-width: 1024px) {
+      #contact h2 {
+        font-size: 40pt; } }
+    @media (max-width: 768px) {
+      #contact h2 {
+        font-size: 30pt; } }
   #contact #ContactForm {
     padding: 20pt;
     width: 100%;
@@ -148,10 +178,12 @@ a.button-cta {
     grid-row-gap: 30pt; }
     #contact #ContactForm .big {
       grid-column: span 2; }
+    @media (max-width: 424px) {
+      #contact #ContactForm .small {
+        grid-column: span 2; } }
     #contact #ContactForm label {
       display: none; }
     #contact #ContactForm input, #contact #ContactForm textarea {
-      font-size: 20pt;
       background-color: #fff;
       color: #555555;
       border-radius: 10pt;
@@ -188,8 +220,9 @@ a.button-cta {
       grid-column: span 2;
       display: flex; }
       #contact #ContactForm .dsgvo-confirm input {
-        margin-right: 1em;
-        width: 20pt; }
+        box-shadow: none;
+        margin-right: 10pt;
+        width: auto; }
       #contact #ContactForm .dsgvo-confirm label {
         flex-grow: 1;
         color: #666666;
@@ -216,6 +249,10 @@ a.button-cta {
         opacity: 0.7; }
         #contact #ContactForm .contact-buttons .button:hover {
           opacity: 1; }
+        @media (max-width: 768px) {
+          #contact #ContactForm .contact-buttons .button {
+            font-size: 12pt;
+            padding: 10pt 20pt; } }
     #contact #ContactForm .formstatus {
       text-align: center; }
       #contact #ContactForm .formstatus span {
@@ -248,6 +285,7 @@ footer {
     font-size: 16pt; }
   footer .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; }
   footer .footer-company span, footer .footer-company a {
     display: block; }
@@ -261,6 +299,12 @@ footer {
       color: #bbbbbb; }
     footer .footer-legal a:hover {
       color: #ffffff; }
+  @media (max-width: 768px) {
+    footer .footer-company, footer .footer-legal {
+      width: 100%;
+      text-align: left; }
+    footer .footer-legal {
+      margin-top: 20pt; } }
 
 .impressum h1, .impressum h2, .impressum h3, .impressum h4, .datenschutz h1, .datenschutz h2, .datenschutz h3, .datenschutz h4 {
   color: #33CCCC;
@@ -268,17 +312,29 @@ footer {
 
 .impressum h1, .datenschutz h1 {
   font-size: 50pt;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .impressum h1, .datenschutz h1 {
+      font-size: 30pt; } }
 
 .impressum h2, .datenschutz h2 {
   font-size: 30pt; }
+  @media (max-width: 768px) {
+    .impressum h2, .datenschutz h2 {
+      font-size: 22pt; } }
 
 .impressum h3, .datenschutz h3 {
   font-size: 20pt; }
+  @media (max-width: 768px) {
+    .impressum h3, .datenschutz h3 {
+      font-size: 16pt; } }
 
 .impressum .language-switch, .datenschutz .language-switch {
   border-radius: 200pt;
-  float: right; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
   .impressum .language-switch button, .impressum .language-switch button:hover, .impressum .language-switch button:focus, .impressum .language-switch button:active, .datenschutz .language-switch button, .datenschutz .language-switch button:hover, .datenschutz .language-switch button:focus, .datenschutz .language-switch button:active {
     outline: none;
     border: none;
@@ -289,6 +345,9 @@ footer {
     font-size: 16pt;
     cursor: pointer;
     transition: color 0.2s, border-color 0.2s, background-color 0.2s; }
+    @media (max-width: 768px) {
+      .impressum .language-switch button, .impressum .language-switch button:hover, .impressum .language-switch button:focus, .impressum .language-switch button:active, .datenschutz .language-switch button, .datenschutz .language-switch button:hover, .datenschutz .language-switch button:focus, .datenschutz .language-switch button:active {
+        font-size: 12pt; } }
   .impressum .language-switch button:first-child, .datenschutz .language-switch button:first-child {
     border-radius: 20pt 0 0 20pt; }
   .impressum .language-switch button:last-child, .datenschutz .language-switch button:last-child {
@@ -296,11 +355,9 @@ footer {
   .impressum .language-switch button.active, .datenschutz .language-switch button.active {
     background-color: #33CCCC;
     color: #fff !important; }
-    .impressum .language-switch button.active:hover, .datenschutz .language-switch button.active:hover {
-      background-color: #1B6163; }
   .impressum .language-switch button:hover, .datenschutz .language-switch button:hover {
-    border-color: #1B6163;
-    color: #1B6163; }
+    background-color: #33CCCC;
+    color: #ffffff; }
 
 .impressum #content, .datenschutz #content {
   padding: 80pt 0; }

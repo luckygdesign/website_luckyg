@@ -1,4 +1,9 @@
 
+$breakpoint-s: 424px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+
+
 body {
   margin: 0;
   padding:0;
@@ -9,6 +14,10 @@ li, a, span, p, h1, h2, h3, input, label, textarea, button {
   font-weight: 400;
   text-decoration: none;
   font-size: 20pt;
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 12pt;
+  }
 }
 
 h1, h2, h3, a.button-cta {
@@ -30,6 +39,11 @@ a.button-cta {
   &:hover {
     opacity: 1;
   }
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 12pt;
+    padding: 10pt 20pt;
+  }
 }
 
 .container {
@@ -47,8 +61,16 @@ a.button-cta {
   header {
     padding: 20pt 0;
     display: flex;
+    @media (max-width: $breakpoint-m) {
+      justify-content: center;
+    }
+
 
     nav {
+
+      @media (max-width: $breakpoint-m) {
+        display: none;
+      }
 
       flex-grow: 1;
       ul {
@@ -89,9 +111,17 @@ a.button-cta {
         text-transform: uppercase;
         margin-right: 10pt;
         text-shadow: #00000040 0.5pt 0.5pt 8pt;
+        display: none;
+        @media (max-width: $breakpoint-s) {
+          display: none;
+        }
+  
       }
       img {
-        height: 50pt;
+        height: 80pt;
+        @media (max-width: $breakpoint-s) {
+          height: 70pt;
+        }
       }
     }
   }
@@ -112,6 +142,9 @@ a.button-cta {
     }
     h1 {
       font-size: 18vw;
+      @media (max-width: $breakpoint-m) {
+        margin-bottom: 20pt;
+      }
     }
     h2 {
       font-size: 12vw;
@@ -139,7 +172,7 @@ a.button-cta {
 }
 
 #contact {
-  padding: 120px;
+  padding: 120px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -164,12 +197,12 @@ a.button-cta {
       }
       margin: 20pt 0pt;
 
-      &:first-of-type {
-        margin-top: 40pt;
+      @media (min-width: $breakpoint-m) {
+        &:first-of-type {
+          margin-top: 40pt;
+        }      
       }
     }
-
-
 
     svg {
       background-color: #33CCCC;
@@ -189,6 +222,14 @@ a.button-cta {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+
+    @media (max-width: $breakpoint-l) {
+      font-size: 40pt;
+    }
+    @media (max-width: $breakpoint-m) {
+      font-size: 30pt;
+    }
+
   }
 
   #ContactForm {
@@ -207,12 +248,17 @@ a.button-cta {
       grid-column: span 2;
     }  
 
+    @media (max-width: $breakpoint-s) {
+      .small {
+        grid-column: span 2;
+      }
+    }
+
 	  label {
 		  display: none;
 	  }
   
     input, textarea {
-		  font-size: 20pt;
       background-color: #fff;
       color: #555555;
       border-radius: 10pt;
@@ -267,8 +313,9 @@ a.button-cta {
       display: flex;
 
 		  input {
-        margin-right: 1em;
-        width: 20pt;
+        box-shadow: none;
+        margin-right: 10pt;
+        width: auto;
 		  }
   
 		  label {
@@ -307,6 +354,11 @@ a.button-cta {
   
         &:hover {
           opacity: 1;
+        }
+
+        @media (max-width: $breakpoint-m) {
+          font-size: 12pt;
+          padding: 10pt 20pt;
         }
       }
     }
@@ -357,6 +409,7 @@ footer {
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -385,6 +438,17 @@ footer {
       color: #ffffff;
     }
   }
+
+  @media (max-width: $breakpoint-m) {
+    .footer-company, .footer-legal {
+      width: 100%;
+      text-align: left;
+    }
+
+    .footer-legal {
+      margin-top: 20pt;
+    }
+  }
 }
 
 
@@ -398,19 +462,30 @@ footer {
   h1 {
     font-size: 50pt;
     text-transform: uppercase;
+    text-align: center;
+    @media (max-width: $breakpoint-m) {
+      font-size: 30pt;
+    }
   }
 
   h2 {
     font-size: 30pt;
+    @media (max-width: $breakpoint-m) {
+      font-size: 22pt;
+    }
   }
 
   h3 {
     font-size: 20pt;
+    @media (max-width: $breakpoint-m) {
+      font-size: 16pt;    }
   }
 
   .language-switch {
     border-radius: 200pt;
-    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     button, button:hover, button:focus, button:active {
       outline: none;
@@ -422,6 +497,9 @@ footer {
       font-size: 16pt;
       cursor: pointer;
       transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+      @media (max-width: $breakpoint-m) {
+        font-size: 12pt;
+      }
     }
 
     button:first-child {
@@ -435,14 +513,11 @@ footer {
     button.active {
       background-color: #33CCCC;
       color: #fff !important;
-      &:hover {
-        background-color: #1B6163;
-      }
     }
 
     button:hover {
-      border-color: #1B6163;
-      color: #1B6163;
+      background-color: #33CCCC;
+      color: #ffffff;
     }
 
   }
