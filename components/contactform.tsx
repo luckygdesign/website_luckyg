@@ -87,7 +87,7 @@ class Contactform extends React.Component<IProps, IState> {
         onSubmit={this.submit}
       >
         <div className="small">
-          <label>Name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
@@ -99,7 +99,7 @@ class Contactform extends React.Component<IProps, IState> {
         </div>
 
         <div className="small">
-          <label>Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
@@ -111,7 +111,7 @@ class Contactform extends React.Component<IProps, IState> {
         </div>
 
         <div className="big">
-          <label>Nachricht</label>
+          <label htmlFor="message">Message</label>
           <textarea
             name="message"
             required
@@ -130,7 +130,7 @@ class Contactform extends React.Component<IProps, IState> {
             placeholder="i"
             onChange={this.toggleDatenschutz}
           />
-          <label>
+          <label lang="de" htmlFor="confirm">
             Ich habe die <a href="/datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
             Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href='lukas@luckyg.de'>lukas@luckyg.de</a> widerrufen.
           </label>

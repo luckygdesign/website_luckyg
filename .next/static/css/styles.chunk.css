@@ -185,7 +185,7 @@ a.button-cta {
       #contact #ContactForm .small {
         grid-column: span 2; } }
     #contact #ContactForm label {
-      display: none; }
+      visibility: hidden; }
     #contact #ContactForm input, #contact #ContactForm textarea {
       background-color: #fff;
       color: #555555;
@@ -230,7 +230,8 @@ a.button-cta {
         flex-grow: 1;
         color: #666666;
         display: block;
-        font-size: 12pt; }
+        font-size: 12pt;
+        visibility: visible; }
         #contact #ContactForm .dsgvo-confirm label a, #contact #ContactForm .dsgvo-confirm label a:visited {
           transition: color 0.3s;
           color: #444444;
@@ -285,7 +286,7 @@ a.button-cta {
 footer {
   background-color: #333333;
   padding: 80px 0px;
-  color: #999999; }
+  color: #aaaaaa; }
   footer span, footer a {
     font-size: 16pt; }
   footer .container {
@@ -301,7 +302,8 @@ footer {
     footer .footer-legal span, footer .footer-legal a {
       display: block; }
     footer .footer-legal a, footer .footer-legal a:visited {
-      color: #bbbbbb; }
+      color: #33CCCC;
+      transition: color 0.2s; }
     footer .footer-legal a:hover {
       color: #ffffff; }
   @media (max-width: 768px) {

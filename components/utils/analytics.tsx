@@ -3,6 +3,7 @@ import ReactGA from 'react-ga';
 export const initGA = () => {
   console.log('GA init')
   ReactGA.initialize('UA-151957458-1')
+  ReactGA.set({ anonymizeIp: true });
 }
 export const logPageView = () => {
   console.log(`Logging pageview for ${window.location.pathname}`)

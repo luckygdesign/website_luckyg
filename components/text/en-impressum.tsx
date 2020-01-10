@@ -2,7 +2,7 @@ import React from 'react';
 
 const Impressum = () => (
 
-    <div>
+    <div lang="en">
 
         <h1>Site Notice</h1>
 

@@ -138,6 +138,7 @@ class Contactform extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component
       },
       __self: this
     }, __jsx("label", {
+      htmlFor: "name",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 90
@@ -163,6 +164,7 @@ class Contactform extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component
       },
       __self: this
     }, __jsx("label", {
+      htmlFor: "email",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 102
@@ -188,12 +190,13 @@ class Contactform extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component
       },
       __self: this
     }, __jsx("label", {
+      htmlFor: "message",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 114
       },
       __self: this
-    }, "Nachricht"), __jsx("textarea", {
+    }, "Message"), __jsx("textarea", {
       name: "message",
       required: true,
       placeholder: "Hallo...",
@@ -224,6 +227,8 @@ class Contactform extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component
       },
       __self: this
     }), __jsx("label", {
+      lang: "de",
+      htmlFor: "confirm",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 133
@@ -696,16 +701,24 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 39
       },
       __self: this
-    }), __jsx("title", {
+    }), __jsx("meta", {
+      name: "description",
+      content: "Hey, I'm Lukas Gro\xDFmann - a frontend web developer, web designer and event technician fascinated by technology.",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 40
       },
       __self: this
+    }), __jsx("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
     }, "LUCKYG.DESIGN")), this.props.children, __jsx(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 45
       },
       __self: this
     }));

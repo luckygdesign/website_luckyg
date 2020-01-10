@@ -37,6 +37,7 @@ export default class Layout extends React.Component {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#FFEE00" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Hey, I'm Lukas Großmann - a frontend web developer, web designer and event technician fascinated by technology." />
           <title>LUCKYG.DESIGN</title>
 
         </Head>

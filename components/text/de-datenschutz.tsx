@@ -2,7 +2,7 @@ import React from 'react';
 
 const Datenschutz = () => (
 
-    <div>
+    <div lang="de">
 
     <h1>Datenschutzerklärung</h1>
     <h2>1. Datenschutz auf einen Blick</h2>
