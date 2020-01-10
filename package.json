@@ -29,6 +29,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "deploy":"next build && rm -rf out && next export && firebase deploy --only hosting",
     "type-check": "tsc"
   },
   "eslintConfig": {
