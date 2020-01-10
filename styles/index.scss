@@ -408,6 +408,45 @@ footer {
     font-size: 20pt;
   }
 
+  .language-switch {
+    border-radius: 200pt;
+    float: right;
+
+    button, button:hover, button:focus, button:active {
+      outline: none;
+      border: none;
+      color: #33CCCC;
+      padding: 10pt 20pt;
+      border: solid 2px #33CCCC;
+      text-transform: uppercase;
+      font-size: 16pt;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+    }
+
+    button:first-child {
+      border-radius: 20pt 0 0 20pt;
+    }
+
+    button:last-child {
+      border-radius: 0 20pt 20pt 0;
+    }
+
+    button.active {
+      background-color: #33CCCC;
+      color: #fff !important;
+      &:hover {
+        background-color: #1B6163;
+      }
+    }
+
+    button:hover {
+      border-color: #1B6163;
+      color: #1B6163;
+    }
+
+  }
+
   #content {
 
     padding: 80pt 0;

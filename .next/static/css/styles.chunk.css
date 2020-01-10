@@ -276,6 +276,32 @@ footer {
 .impressum h3, .datenschutz h3 {
   font-size: 20pt; }
 
+.impressum .language-switch, .datenschutz .language-switch {
+  border-radius: 200pt;
+  float: right; }
+  .impressum .language-switch button, .impressum .language-switch button:hover, .impressum .language-switch button:focus, .impressum .language-switch button:active, .datenschutz .language-switch button, .datenschutz .language-switch button:hover, .datenschutz .language-switch button:focus, .datenschutz .language-switch button:active {
+    outline: none;
+    border: none;
+    color: #33CCCC;
+    padding: 10pt 20pt;
+    border: solid 2px #33CCCC;
+    text-transform: uppercase;
+    font-size: 16pt;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s; }
+  .impressum .language-switch button:first-child, .datenschutz .language-switch button:first-child {
+    border-radius: 20pt 0 0 20pt; }
+  .impressum .language-switch button:last-child, .datenschutz .language-switch button:last-child {
+    border-radius: 0 20pt 20pt 0; }
+  .impressum .language-switch button.active, .datenschutz .language-switch button.active {
+    background-color: #33CCCC;
+    color: #fff !important; }
+    .impressum .language-switch button.active:hover, .datenschutz .language-switch button.active:hover {
+      background-color: #1B6163; }
+  .impressum .language-switch button:hover, .datenschutz .language-switch button:hover {
+    border-color: #1B6163;
+    color: #1B6163; }
+
 .impressum #content, .datenschutz #content {
   padding: 80pt 0; }
   .impressum #content p, .impressum #content span, .impressum #content a, .impressum #content div, .datenschutz #content p, .datenschutz #content span, .datenschutz #content a, .datenschutz #content div {

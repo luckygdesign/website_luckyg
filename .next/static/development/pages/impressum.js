@@ -9614,7 +9614,7 @@ const App = () => {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fimpressum&absolutePagePath=%2FUsers%2Flukasgrossmann%2FData%2Fluckyg%2FGIT%2Fwebsite_luckyg%2Fpages%2Fimpressum.tsx ***!
   \******************************************************************************************************************************************************************/
@@ -9637,5 +9637,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=impressum.js.map
