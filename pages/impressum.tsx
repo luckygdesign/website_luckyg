@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Mailto from 'react-protected-mailto';
-import Link from 'next/link';
 
 import * as Text from '../components/text';
-
+import Layout from '../components/layout';
+import Header from '../components/header';
  
 const App: React.FC = () => {
 
@@ -11,24 +10,11 @@ const App: React.FC = () => {
 
   return (
 
-    <div className="App impressum">
+    <Layout className="App impressum">
 
       {/* eyecatcher section */}
       <section id="eyecatcher">
-
-        <header className="container">
-          <nav>
-            <ul>
-              <li><a href="/">home</a></li>
-              <li><a href="/#contact">contact</a></li>
-            </ul>
-          </nav>
-          <div className="logo">
-            <span>luckyg.design</span>
-            <img src="/images/logo.png" alt="Luckyg-Design Logo Icon" />
-          </div>
-        </header>
-
+        <Header />
       </section>
 
       {/* contact section */}
@@ -62,27 +48,7 @@ const App: React.FC = () => {
 
       </section>
 
-      <footer>
-
-        <div className="container">
-
-          <div className="footer-company">
-            <span className="company-name">LUCKYG.DESIGN</span>
-            <span className="company-owner">Inhaber: Lukas Großmann</span>
-            <span className="company-addres">Schanzstraße 35, 75446 Wiernsheim, GERMANY</span>
-          </div>
-
-          <div className="footer-legal">
-            <Link href="/datenschutz"><a>Datenschutzerklärung</a></Link>
-            <Link href="/impressum"><a>Impressum</a></Link>
-            <span className="legal-credits">Layout&Design: Lukas Großmann</span>
-          </div>
-
-        </div>
-
-      </footer>
-
-    </div>
+    </Layout>
 
   );
 }

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -370,6 +370,301 @@ class Contactform extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Contactform);
+
+/***/ }),
+
+/***/ "./components/footer.tsx":
+/*!*******************************!*\
+  !*** ./components/footer.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/lukasgrossmann/Data/luckyg/GIT/website_luckyg/components/footer.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Footer = () => {
+  return __jsx("footer", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "footer-company",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, __jsx("span", {
+    className: "company-name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, "LUCKYG.DESIGN"), __jsx("span", {
+    className: "company-owner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "Inhaber: Lukas Gro\xDFmann"), __jsx("span", {
+    className: "company-addres",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "Schanzstra\xDFe 35, 75446 Wiernsheim, GERMANY")), __jsx("div", {
+    className: "footer-legal",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/datenschutz",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, "Datenschutzerkl\xE4rung")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/impressum",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, "Impressum")), __jsx("span", {
+    className: "legal-credits",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, "Layout&Design: Lukas Gro\xDFmann"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/header.tsx":
+/*!*******************************!*\
+  !*** ./components/header.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/lukasgrossmann/Data/luckyg/GIT/website_luckyg/components/header.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Header = () => {
+  return __jsx("header", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, __jsx("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "home")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "/#contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, "contact")))), __jsx("div", {
+    className: "logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "luckyg.design"), __jsx("img", {
+    src: "/images/logo.png",
+    alt: "Luckyg-Design Logo Icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/layout.js":
+/*!******************************!*\
+  !*** ./components/layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Layout; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_analytics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/analytics */ "./components/utils/analytics.tsx");
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/index.scss */ "./styles/index.scss");
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./components/footer.tsx");
+var _jsxFileName = "/Users/lukasgrossmann/Data/luckyg/GIT/website_luckyg/components/layout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_1__["initGA"])();
+      window.GA_INITIALIZED = true;
+    }
+
+    Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_1__["logPageView"])();
+  }
+
+  render() {
+    return __jsx("div", {
+      className: this.props.className,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, this.props.children, __jsx(_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./components/utils/analytics.tsx":
+/*!****************************************!*\
+  !*** ./components/utils/analytics.tsx ***!
+  \****************************************/
+/*! exports provided: initGA, logPageView, logEvent, logException */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initGA", function() { return initGA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logPageView", function() { return logPageView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logEvent", function() { return logEvent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logException", function() { return logException; });
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ "react-ga");
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_0__);
+
+const initGA = () => {
+  console.log('GA init');
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.initialize('UA-151957458-1');
+};
+const logPageView = () => {
+  console.log(`Logging pageview for ${window.location.pathname}`);
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.set({
+    page: window.location.pathname
+  });
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.pageview(window.location.pathname);
+};
+const logEvent = (category = '', action = '') => {
+  if (category && action) {
+    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.event({
+      category,
+      action
+    });
+  }
+};
+const logException = (description = '', fatal = false) => {
+  if (description) {
+    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.exception({
+      description,
+      fatal
+    });
+  }
+};
 
 /***/ }),
 
@@ -2509,8 +2804,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contactform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/contactform */ "./components/contactform.tsx");
 /* harmony import */ var react_protected_mailto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-protected-mailto */ "react-protected-mailto");
 /* harmony import */ var react_protected_mailto__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_protected_mailto__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/header */ "./components/header.tsx");
 var _jsxFileName = "/Users/lukasgrossmann/Data/luckyg/GIT/website_luckyg/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2520,104 +2815,45 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const App = () => {
-  return __jsx("div", {
+  return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "App home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
   }, __jsx("section", {
     id: "eyecatcher",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
-  }, __jsx("header", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, __jsx("nav", {
+  }, __jsx(_components_header__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: undefined
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, "home")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "/#contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, "contact")))), __jsx("div", {
-    className: "logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
-  }, __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: undefined
-  }, "luckyg.design"), __jsx("img", {
-    src: "/images/logo.png",
-    alt: "Luckyg-Design Logo Icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: undefined
-  }))), __jsx("div", {
+  }), __jsx("div", {
     className: "eyecatcher-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 19
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 20
     },
     __self: undefined
   }, "hey, i'm"), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 21
     },
     __self: undefined
   }, "LUKAS"), __jsx("a", {
@@ -2625,192 +2861,122 @@ const App = () => {
     href: "#contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 22
     },
     __self: undefined
   }, "get in touch")), __jsx("div", {
     className: "eyecatcher-scroll",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronDown"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 26
     },
     __self: undefined
   }))), __jsx("section", {
     id: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("div", {
     className: "contact-intro",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 35
     },
     __self: undefined
   }, "let's get in touch"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 36
     },
     __self: undefined
   }, "I'd love to get in contact with you - if you like feel free to call or shoot a message!"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 37
     },
     __self: undefined
   }, "You can also use the contact form below and I will contact you back..."), __jsx("div", {
     className: "contact-email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faEnvelope"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 40
     },
     __self: undefined
   }), __jsx(react_protected_mailto__WEBPACK_IMPORTED_MODULE_4___default.a, {
     email: "lukas@luckyg.de",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 41
     },
     __self: undefined
   })), __jsx("div", {
     className: "contact-phone",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faMobile"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 45
     },
     __self: undefined
   }), __jsx(react_protected_mailto__WEBPACK_IMPORTED_MODULE_4___default.a, {
     tel: "+49 176 5763 7942",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 46
     },
     __self: undefined
   }))), __jsx(_components_contactform__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 51
     },
     __self: undefined
-  })), __jsx("footer", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "footer-company",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: undefined
-  }, __jsx("span", {
-    className: "company-name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: undefined
-  }, "LUCKYG.DESIGN"), __jsx("span", {
-    className: "company-owner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
-  }, "Inhaber: Lukas Gro\xDFmann"), __jsx("span", {
-    className: "company-addres",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: undefined
-  }, "Schanzstra\xDFe 35, 75446 Wiernsheim, GERMANY")), __jsx("div", {
-    className: "footer-legal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: "/datenschutz",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
-  }, "Datenschutzerkl\xE4rung")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: "/impressum",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: undefined
-  }, "Impressum")), __jsx("span", {
-    className: "legal-credits",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: undefined
-  }, "Layout&Design: Lukas Gro\xDFmann")))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
-/***/ 4:
+/***/ "./styles/index.scss":
+/*!***************************!*\
+  !*** ./styles/index.scss ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -2995,6 +3161,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-ga":
+/*!***************************!*\
+  !*** external "react-ga" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ga");
 
 /***/ }),
 

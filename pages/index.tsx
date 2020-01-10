@@ -3,28 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons';
 import Contactform from '../components/contactform';
 import Mailto from 'react-protected-mailto';
-import Link from 'next/link';
+import Layout from '../components/layout';
+import Header from '../components/header';
  
 const App: React.FC = () => {
   return (
 
-    <div className="App home">
+    <Layout className="App home">
 
       {/* eyecatcher section */}
       <section id="eyecatcher">
 
-        <header className="container">
-          <nav>
-            <ul>
-              <li><a href="/">home</a></li>
-              <li><a href="/#contact">contact</a></li>
-            </ul>
-          </nav>
-          <div className="logo">
-            <span>luckyg.design</span>
-            <img src="/images/logo.png" alt="Luckyg-Design Logo Icon" />
-          </div>
-        </header>
+        <Header />
 
         <div className="eyecatcher-content">
           <h2>hey, i'm</h2>
@@ -61,27 +51,7 @@ const App: React.FC = () => {
         <Contactform />
       </section>
 
-      <footer>
-
-        <div className="container">
-
-          <div className="footer-company">
-            <span className="company-name">LUCKYG.DESIGN</span>
-            <span className="company-owner">Inhaber: Lukas Großmann</span>
-            <span className="company-addres">Schanzstraße 35, 75446 Wiernsheim, GERMANY</span>
-          </div>
-
-          <div className="footer-legal">
-            <Link href="/datenschutz"><a>Datenschutzerklärung</a></Link>
-            <Link href="/impressum"><a>Impressum</a></Link>
-            <span className="legal-credits">Layout&Design: Lukas Großmann</span>
-          </div>
-
-        </div>
-
-      </footer>
-
-    </div>
+    </Layout>
 
   );
 }

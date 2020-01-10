@@ -83,9 +83,9 @@ a.button-cta {
       margin: 0;
       padding: 0; }
     #eyecatcher .eyecatcher-content h1 {
-      font-size: 200pt; }
+      font-size: 18vw; }
     #eyecatcher .eyecatcher-content h2 {
-      font-size: 110pt; }
+      font-size: 12vw; }
   #eyecatcher .eyecatcher-scroll {
     position: absolute;
     bottom: -2.5vh;
