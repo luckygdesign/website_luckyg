@@ -159,11 +159,15 @@ a.button-cta {
     width: 100%;
     justify-content: center;
 
-    svg {
-      font-size: 30pt;
-      color: #00000029;
-    }
+    div {
+      width: 30pt;
+      height: 30pt;
 
+      svg {
+        font-size: 30pt;
+        color: #00000029;
+      }
+    }
   }
 }
 
@@ -344,6 +348,8 @@ a.button-cta {
       .button {
         display: inline;
         background-color: #33CCCC;
+        outline: none;
+        border: none;
         color: #fff;
         text-transform: uppercase;
         font-size: 20pt;

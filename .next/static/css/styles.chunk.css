@@ -116,9 +116,12 @@ a.button-cta {
     display: flex;
     width: 100%;
     justify-content: center; }
-    #eyecatcher .eyecatcher-scroll svg {
-      font-size: 30pt;
-      color: #00000029; }
+    #eyecatcher .eyecatcher-scroll div {
+      width: 30pt;
+      height: 30pt; }
+      #eyecatcher .eyecatcher-scroll div svg {
+        font-size: 30pt;
+        color: #00000029; }
 
 .home #eyecatcher {
   height: 95vh; }
@@ -240,6 +243,8 @@ a.button-cta {
       #contact #ContactForm .contact-buttons .button {
         display: inline;
         background-color: #33CCCC;
+        outline: none;
+        border: none;
         color: #fff;
         text-transform: uppercase;
         font-size: 20pt;

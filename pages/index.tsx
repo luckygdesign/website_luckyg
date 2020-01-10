@@ -23,7 +23,9 @@ const App: React.FC = () => {
         </div>
 
         <div className="eyecatcher-scroll">
-          <FontAwesomeIcon icon={faChevronDown} />
+          <div>
+            <FontAwesomeIcon icon={faChevronDown} />
+          </div>
         </div>
 
       </section>
